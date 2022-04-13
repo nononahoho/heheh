@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iya Kamu</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* background: rgb(96, 117, 252);
+            background: linear-gradient(356deg, rgba(96, 117, 252, 1) 0%, rgba(219, 96, 252, 0.9976365546218487) 100%); */
+        }
+
+        .container {
+            margin: 100px auto;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(102, 102, 102);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Jawabannya:</h2>
+        <h3 id='nama'> </h3>
+        <h3 id='jawaban'></h3>
+    </div>
+
+    <script>
+        const a = 0;
+        const jawab = document.querySelector('#nama');
+        const jawab1 = document.querySelector('#jawaban');
+        while (a < 99) {
+            let inp = prompt('masukan nama : ');
+            if (inp == null || inp == '') {
+                alert('diisi dulu atuh');
+            } else {
+                alert(`Halo ${inp}`);
+                alert(`Apa kabarnya? moga baik-baik aja`);
+                jawab.innerHTML = "namanya: " + inp;
+                while (1 < 99) {
+                    let pilih = prompt('gw ada kejutan pilih dari nomer 1-10');
+                    if (pilih == 1) {
+                        // alert('Hi maniezzz');
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = "Hi maniezzz";
+                        break;
+                    } else if (pilih == 2) {
+                        // alert('semangat ya, hidup ini keras kalo mau lembut dipresto aja');
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = "semangat ya, hidup ini keras kalo mau lembut dipresto aja";
+                        break;
+                    } else if (pilih == 3) {
+                        // alert('Danilla - Ada di Sana (Official Music Video) menit 00.39-00.54');
+                        alert('siap-siap ya')
+                        jawab1.innerHTML =
+                            "Danilla - Ada di Sana (Official Music Video) menit 00.39-00.54 ";
+                        break;
+                    } else if (pilih == 4) {
+                        // alert(`Danilla - Ada di Sana (Official Music Video) menit 01.51-02.13`);
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = "Danilla - Ada di Sana (Official Music Video) menit 01.51-02.13 ";
+                        break;
+                    } else if (pilih == 5) {
+                        // alert(`ucul banget siee kek doge awokowakka`);
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `ucul banget siee kek doge awokowakka ${inp}`;
+                        break;
+                    } else if (pilih == 6) {
+                        // alert(`jangan lama-lama badmood nya ya ${inp} senyum doongg`);
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `jangan lama-lama badmood nya ya ${inp} senyum doongg`;
+                        break;
+                    } else if (pilih == 7) {
+                        // alert(`If I could go with you in the dream, I would continue to sleep forever.`);
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `If I could go with you in the dream, I would continue to sleep forever.`;
+                        break;
+                    } else if (pilih == 8) {
+                        // alert(`cinta itu basi `)
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `cinta itu basi `;
+                        break;
+                    } else if (pilih == 9) {
+                        // alert(`${inp} PAP`)
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `${inp} PAP`;
+                        break;
+                    } else if (pilih == 10) {
+                        // alert(`NYANYI DONGG!!!`)
+                        alert('siap-siap ya')
+                        jawab1.innerHTML = `NYANYI DONGG!!!`;
+                        break;
+                    } else {
+                        alert('cuma pilih 1-10 doang yaaa')
+                        continue;
+                    }
+                }
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
